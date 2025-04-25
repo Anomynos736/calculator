@@ -1,0 +1,84 @@
+*{
+    font-family: 'Exo 2', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    transition: .1s linear;
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    background: #54a0ff;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container{
+    display: grid;
+    place-items: center;
+    background: rgba(0, 0, 0, .5);
+    height: 51rem;
+    width: 40rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 1rem #333;
+    
+}
+
+form{
+    height: 90%;
+    width: 90%;
+}
+
+input[type="text"]{
+    width: calc(100% - .5rem);
+    height: 5rem;
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, .5);
+    color: #fff;
+    font-size: 2rem;
+    padding: 0 1rem;
+    margin: 1rem 0;
+}
+
+input[type="button"]{
+    border: none;
+    outline: none;
+    height: 6rem;
+    text-transform: uppercase;
+    width: 8rem;
+    margin: .35rem;
+    background: rgba(255, 255, 255, .7);
+    cursor: pointer;
+    color: #333;
+    font-size: 2rem;
+    border-radius: 5px;
+
+    
+
+    &.total{
+        width: 100%;
+        background: #2e86de;
+        color: #fff;
+}
+
+&:active{
+    background: rgba(255, 0, 0, .5);
+}
+
+&:active{
+    background: rgba(0, 0, 0, .5); color: #fff;
+}
+
+
+}
